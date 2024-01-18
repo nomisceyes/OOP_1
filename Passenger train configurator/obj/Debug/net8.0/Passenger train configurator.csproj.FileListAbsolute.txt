@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\Passenger train configurator\bin\Debug\net8.0\Passenger train configurator.exe
+C:\Users\valer\source\repos\OOP\Passenger train configurator\bin\Debug\net8.0\Passenger train configurator.deps.json
+C:\Users\valer\source\repos\OOP\Passenger train configurator\bin\Debug\net8.0\Passenger train configurator.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\Passenger train configurator\bin\Debug\net8.0\Passenger train configurator.dll
+C:\Users\valer\source\repos\OOP\Passenger train configurator\bin\Debug\net8.0\Passenger train configurator.pdb
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.dll
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\refint\Passenger train configurator.dll
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.pdb
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\Passenger train configurator.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\Passenger train configurator\obj\Debug\net8.0\ref\Passenger train configurator.dll

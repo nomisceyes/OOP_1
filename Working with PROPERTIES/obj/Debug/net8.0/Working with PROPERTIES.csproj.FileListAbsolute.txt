@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\bin\Debug\net8.0\Working with PROPERTIES.exe
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\bin\Debug\net8.0\Working with PROPERTIES.deps.json
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\bin\Debug\net8.0\Working with PROPERTIES.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\bin\Debug\net8.0\Working with PROPERTIES.dll
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\bin\Debug\net8.0\Working with PROPERTIES.pdb
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.dll
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\refint\Working with PROPERTIES.dll
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.pdb
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\Working with PROPERTIES.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\Working with PROPERTIES\obj\Debug\net8.0\ref\Working with PROPERTIES.dll

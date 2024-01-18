@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\Card Deck\bin\Debug\net8.0\Card Deck.exe
+C:\Users\valer\source\repos\OOP\Card Deck\bin\Debug\net8.0\Card Deck.deps.json
+C:\Users\valer\source\repos\OOP\Card Deck\bin\Debug\net8.0\Card Deck.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\Card Deck\bin\Debug\net8.0\Card Deck.dll
+C:\Users\valer\source\repos\OOP\Card Deck\bin\Debug\net8.0\Card Deck.pdb
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.dll
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\refint\Card Deck.dll
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.pdb
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\Card Deck.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\Card Deck\obj\Debug\net8.0\ref\Card Deck.dll

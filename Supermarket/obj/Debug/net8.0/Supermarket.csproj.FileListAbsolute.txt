@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\Supermarket\bin\Debug\net8.0\Supermarket.exe
+C:\Users\valer\source\repos\OOP\Supermarket\bin\Debug\net8.0\Supermarket.deps.json
+C:\Users\valer\source\repos\OOP\Supermarket\bin\Debug\net8.0\Supermarket.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\Supermarket\bin\Debug\net8.0\Supermarket.dll
+C:\Users\valer\source\repos\OOP\Supermarket\bin\Debug\net8.0\Supermarket.pdb
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.dll
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\refint\Supermarket.dll
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.pdb
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\Supermarket.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\Supermarket\obj\Debug\net8.0\ref\Supermarket.dll

@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\OOP\bin\Debug\net8.0\Working with CLASS.exe
+C:\Users\valer\source\repos\OOP\OOP\bin\Debug\net8.0\Working with CLASS.deps.json
+C:\Users\valer\source\repos\OOP\OOP\bin\Debug\net8.0\Working with CLASS.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\OOP\bin\Debug\net8.0\Working with CLASS.dll
+C:\Users\valer\source\repos\OOP\OOP\bin\Debug\net8.0\Working with CLASS.pdb
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.dll
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\refint\Working with CLASS.dll
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.pdb
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\Working with CLASS.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\OOP\obj\Debug\net8.0\ref\Working with CLASS.dll

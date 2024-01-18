@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\Book storage\bin\Debug\net8.0\Book storage.exe
+C:\Users\valer\source\repos\OOP\Book storage\bin\Debug\net8.0\Book storage.deps.json
+C:\Users\valer\source\repos\OOP\Book storage\bin\Debug\net8.0\Book storage.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\Book storage\bin\Debug\net8.0\Book storage.dll
+C:\Users\valer\source\repos\OOP\Book storage\bin\Debug\net8.0\Book storage.pdb
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.dll
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\refint\Book storage.dll
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.pdb
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\Book storage.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\Book storage\obj\Debug\net8.0\ref\Book storage.dll

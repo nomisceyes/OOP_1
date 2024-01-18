@@ -1,0 +1,14 @@
+C:\Users\valer\source\repos\OOP\Gladiator fights\bin\Debug\net8.0\Gladiator fights.exe
+C:\Users\valer\source\repos\OOP\Gladiator fights\bin\Debug\net8.0\Gladiator fights.deps.json
+C:\Users\valer\source\repos\OOP\Gladiator fights\bin\Debug\net8.0\Gladiator fights.runtimeconfig.json
+C:\Users\valer\source\repos\OOP\Gladiator fights\bin\Debug\net8.0\Gladiator fights.dll
+C:\Users\valer\source\repos\OOP\Gladiator fights\bin\Debug\net8.0\Gladiator fights.pdb
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.AssemblyInfoInputs.cache
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.AssemblyInfo.cs
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.csproj.CoreCompileInputs.cache
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.dll
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\refint\Gladiator fights.dll
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.pdb
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\Gladiator fights.genruntimeconfig.cache
+C:\Users\valer\source\repos\OOP\Gladiator fights\obj\Debug\net8.0\ref\Gladiator fights.dll
