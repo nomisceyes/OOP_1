@@ -1,39 +1,35 @@
 ﻿Supermarket supermarket = new Supermarket();
-supermarket.ShowProducts();
-supermarket.AddBasket();
+supermarket.FillingTheBasket();
+sgfgdsgs
 class Supermarket
 {
     private Queue<Client> _clients = new Queue<Client>(5);
-    private Dictionary<string, int> _products = new Dictionary<string, int>();
+    private List<Product> _products = new List<Product>();
     private Random _random = new Random();
+
     public Supermarket()
     {
+        Product[] products = { new Product("Колбаса", 150), new Product("Хлеб", 40), new Product("Молоко", 60), new Product("Водка", 200), new Product("Картофель", 20) };
+        _products.AddRange(products);
+    }
 
-        string[] name = { "Картофель", "Молоко", "Пиво", "Вода", "Чипсы", "Колбаса", "Сыр" };
-        int[] price = { 20, 50, 50, 30, 130, 200, 190 };
-
-        for (int i = 0; i < name.Length; i++)
+    public void FillingTheBasket()
+    {
+        List<Product> basket = new List<Product>();
+        
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < price.Length; j++)
-            {
-                _products.Add(name[i], price[j]);
-            }
+            basket.Add(_products[_random.Next(_products.Count)]);
+
+        }
+        foreach (var product in basket)
+        {
+            product.ShowInfo();
         }
     }
-    public void ShowProducts()
+    public void PurchaseAndSaleTransaction()
     {
-        foreach(var product in _products)
-        {
-            Console.WriteLine(product.Key + " - " + product.Value);
-        }
-    }
-    public void AddBasket()
-    {
-        for(int i = 0; i < _clients.Count; i++)
-        {
-            _clients[i] = _random.Next(_products);
-            Console.WriteLine(_clients[i]);
-        } 
+       
     }
 }
 class Client
@@ -44,7 +40,10 @@ class Client
     public Client(Product[] products)
     {
         AmountOfMoney = _random.Next(200, 500);
-
+    }
+    public void ShowAmountOfMoney()
+    {
+        Console.WriteLine($"Количество денег у покупателя: {AmountOfMoney}");
     }
 }
 class Product
@@ -53,8 +52,8 @@ class Product
     public int Price { get; private set; }
     public Product(string name, int price)
     {
-        name = Name;
-        price = Price;
+        Name = name;
+        Price = price;
     }
     public void ShowInfo()
     {
