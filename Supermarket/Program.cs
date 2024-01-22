@@ -1,12 +1,14 @@
 ﻿Supermarket supermarket = new Supermarket();
 supermarket.ShowProducts();
+supermarket.AddBasket();
 class Supermarket
 {
-    private Queue<Client> _clients = new Queue<Client>();
+    private Queue<Client> _clients = new Queue<Client>(5);
     private Dictionary<string, int> _products = new Dictionary<string, int>();
     private Random _random = new Random();
     public Supermarket()
     {
+
         string[] name = { "Картофель", "Молоко", "Пиво", "Вода", "Чипсы", "Колбаса", "Сыр" };
         int[] price = { 20, 50, 50, 30, 130, 200, 190 };
 
@@ -25,19 +27,13 @@ class Supermarket
             Console.WriteLine(product.Key + " - " + product.Value);
         }
     }
-    public void AddClient()
-    {
-
-    }
     public void AddBasket()
     {
-        for (int i = _random.Next(0, _products.Count); i < _random.Next(1, _products.Count); i++)
+        for(int i = 0; i < _clients.Count; i++)
         {
-            foreach (var product in _products)
-            {
-                
-            }          
-        }
+            _clients[i] = _random.Next(_products);
+            Console.WriteLine(_clients[i]);
+        } 
     }
 }
 class Client
