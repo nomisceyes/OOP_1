@@ -1,6 +1,6 @@
 ﻿Supermarket supermarket = new Supermarket();
 supermarket.FillingTheBasket();
-sgfgdsgs
+
 class Supermarket
 {
     private Queue<Client> _clients = new Queue<Client>(5);
