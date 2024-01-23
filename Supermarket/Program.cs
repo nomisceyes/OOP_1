@@ -13,23 +13,10 @@ class Supermarket
         _products.AddRange(products);
     }
 
-    public void FillingTheBasket()
-    {
-        List<Product> basket = new List<Product>();
-        
-        for (int i = 0; i < 3; i++)
-        {
-            basket.Add(_products[_random.Next(_products.Count)]);
 
-        }
-        foreach (var product in basket)
-        {
-            product.ShowInfo();
-        }
-    }
     public void PurchaseAndSaleTransaction()
     {
-       
+
     }
 }
 class Client
@@ -44,6 +31,23 @@ class Client
     public void ShowAmountOfMoney()
     {
         Console.WriteLine($"Количество денег у покупателя: {AmountOfMoney}");
+    }
+
+    public void FillingTheBasket()
+    {
+        List<Product> basket = new List<Product>();
+        private int minAmountProduct = 1;
+        private int maxAmountProduct = 5;
+
+        for (int i = 0; i < _random.Next; i++)
+        {
+            basket.Add(_products[_random.Next(_products.Count)]);
+
+        }
+        foreach (var product in basket)
+        {
+            product.ShowInfo();
+        }
     }
 }
 class Product
