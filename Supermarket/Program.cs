@@ -6,11 +6,14 @@ class Supermarket
     private Queue<Client> _clients = new Queue<Client>();
     private List<Product> _products = new List<Product>();
     private Random _random = new Random();
-    private int _maxCountClients = 9;
-    private List<Product> productBasket = new List<Product>();
+    private int _money = 0;
 
     public Supermarket()
     {
+        int _minCountClients = 5;
+        int _maxCountClients = 9;
+        int clientsCount = _random.Next(_minCountClients, _maxCountClients);
+
         Product[] products = { new Product("Колбаса", 150),
                                new Product("Хлеб", 40),
                                new Product("Молоко", 60),
@@ -20,7 +23,7 @@ class Supermarket
 
         _products.AddRange(products);
 
-        for (int i = 0; i < _maxCountClients; i++)
+        for (int i = 0; i < clientsCount; i++)
         {
             _clients.Enqueue(new Client(_random.Next(200, 500), FillingBasket()));
         }
@@ -32,21 +35,26 @@ class Supermarket
 
         while (_clients.Count > 0)
         {
-            foreach (Client client in _clients)
-            {
-                client.BuyProducts();
-               
-            }
+            ServeClient(_clients.Dequeue());
         }
     }
 
     private List<Product> FillingBasket()
     {
+        List<Product> productBasket = new List<Product>();
+
         for (int i = 0; i < _random.Next(1, _products.Count); i++)
         {
             productBasket.Add(_products[_random.Next(_products.Count)]);
         }
         return productBasket;
+    }
+
+    private void ServeClient(Client client)
+    {
+        client.BuyProducts();
+        Console.ReadKey();
+        Console.Clear();
     }
 }
 
@@ -54,7 +62,7 @@ class Client
 {
     private List<Product> _basket = new List<Product>();
     private Random _random = new Random();
-    private int _purchaseAmount = 0;
+    private int _purchaseAmount;
     private int _amountOfMoney;
 
     public Client(int amountOfMoney, List<Product> products)
@@ -63,13 +71,13 @@ class Client
         _basket.AddRange(products);
     }
 
-    public void BuyProducts()
+    public int BuyProducts()
     {
         ShowAmountOfMoney();
         BasketPrice();
 
         if (_amountOfMoney >= _purchaseAmount)
-        {        
+        {
             PayBasket();
         }
         else
@@ -77,17 +85,22 @@ class Client
             RemoveProductFromBasket();
             PayBasket();
         }
+
+        return _purchaseAmount;
     }
 
     private void RemoveProductFromBasket()
     {
-        int indexRemoveProduct = _random.Next(_basket.Count);
+        while (_amountOfMoney < _purchaseAmount)
+        {
+            int indexRemoveProduct = _random.Next(_basket.Count);
 
-        Console.WriteLine($"Клиент убирает из корзины: {_basket[indexRemoveProduct].Name}");
+            Console.WriteLine($"Клиент убирает из корзины: {_basket[indexRemoveProduct].Name}");
 
-        _basket.RemoveAt(indexRemoveProduct);
+            _basket.RemoveAt(indexRemoveProduct);
 
-        BasketPrice();
+            BasketPrice();
+        }
     }
 
     private void BasketPrice()
@@ -101,13 +114,13 @@ class Client
         }
 
         Console.WriteLine($"Итоговая сумма: {_purchaseAmount}");
+        Console.ReadKey();
     }
 
     private void PayBasket()
     {
         _amountOfMoney -= _purchaseAmount;
         _basket.Clear();
-
         Console.WriteLine($"Остаток денег: {_amountOfMoney}");
     }
 
