@@ -28,7 +28,7 @@ while (isWork)
             break;
     }
 
-    Console.ReadKey();
+    
     aquarium.LifetimeFishes();
     Console.Clear();
 }
@@ -59,13 +59,17 @@ class Aquarium
             name = Console.ReadLine();
 
             Console.Write("Введите время жизни рыбы: ");
-            lifetime = Convert.ToInt32(Console.ReadLine());
-
-
-            _fishes.Add(new Fish(name, lifetime));
+            try
+            {
+                lifetime = Convert.ToInt32(Console.ReadLine());
+                _fishes.Add(new Fish(name, lifetime));
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Неверно! Ведите значение.");
+            }
         }
     }
-
 
     public void RemoveFish()
     {
@@ -74,7 +78,7 @@ class Aquarium
 
     private Fish SearchFish()
     {
-        Console.WriteLine("Какую рыбу вы хотите убрать?");
+        Console.Write("Какую рыбу вы хотите убрать?");
         string name = Console.ReadLine();
 
         foreach (Fish fish in _fishes)
