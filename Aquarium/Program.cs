@@ -67,63 +67,60 @@ class Aquarium
     }
 
 
-public void RemoveFish()
-{
-    _fishes.Remove(SearchFish());
-}
-
-private Fish SearchFish()
-{
-    Console.WriteLine("Какую рыбу вы хотите убрать?");
-    string name = Console.ReadLine();
-
-    foreach (Fish fish in _fishes)
+    public void RemoveFish()
     {
-        if (fish.Name.ToLower() == name.ToLower())
+        _fishes.Remove(SearchFish());
+    }
+
+    private Fish SearchFish()
+    {
+        Console.WriteLine("Какую рыбу вы хотите убрать?");
+        string name = Console.ReadLine();
+
+        foreach (Fish fish in _fishes)
         {
-            return fish;
+            if (fish.Name.ToLower() == name.ToLower())
+            {
+                return fish;
+            }
+        }
+        return null;
+    }
+
+    public void LifetimeFishes()
+    {
+        foreach (Fish fish in _fishes)
+        {
+            if (fish.Lifetime > 0)
+            {
+                fish.Lifetime--;
+            }
         }
     }
-    return null;
-}
 
-public void LifetimeFishes()
-{
-    foreach (Fish fish in _fishes)
+    public void ShowInfo()
     {
-        if (fish.Lifetime > 0)
+        int positionX = 60;
+        int positionY = 0;
+
+        foreach (Fish fish in _fishes)
         {
-            fish.Lifetime--;
-        }
-    }
-}
-
-public void ShowInfo()
-{
-    int positionX = 60;
-    int positionY = 0;
-
-    foreach (Fish fish in _fishes)
-    {
-        Console.SetCursorPosition(positionX, positionY);
-        fish.ShowInfo();
-
-        if (fish.Lifetime == 0)
-        {
-            fish.Lifetime = 0;
-
-            positionX += 43;
-
             Console.SetCursorPosition(positionX, positionY);
-            Console.WriteLine("Рыбу стоит убрать.");
+            fish.ShowInfo();
 
-            positionX = 60;
+            int savePositionX = Console.CursorLeft;
+            int savePositionY = Console.CursorTop;
+
+            if (fish.Lifetime == 0)
+            {
+                Console.SetCursorPosition(savePositionX + 1, savePositionY);
+                Console.WriteLine("Рыбу стоит убрать.");
+            }
+
+            positionY++;
+            Console.SetCursorPosition(0, 0);
         }
-
-        positionY++;
-        Console.SetCursorPosition(0, 0);
     }
-}
 }
 
 class Fish
@@ -139,6 +136,6 @@ class Fish
 
     public void ShowInfo()
     {
-        Console.WriteLine($"Имя рыбы: {Name},оставшееся время жизни: {Lifetime}.");
+        Console.Write($"Имя рыбы: {Name},оставшееся время жизни: {Lifetime}.");
     }
 }
