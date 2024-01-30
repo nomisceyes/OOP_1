@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User-pc\\source\\repos\\OOP_1\\Aquarium\\Aquarium.csproj",
+      "projectUniqueName": "C:\\Users\\User-pc\\Documents\\GitHub\\OOP_1\\OOP_1\\Aquarium\\Aquarium.csproj",
       "projectName": "Aquarium",
-      "projectPath": "C:\\Users\\User-pc\\source\\repos\\OOP_1\\Aquarium\\Aquarium.csproj",
+      "projectPath": "C:\\Users\\User-pc\\Documents\\GitHub\\OOP_1\\OOP_1\\Aquarium\\Aquarium.csproj",
       "packagesPath": "C:\\Users\\User-pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User-pc\\source\\repos\\OOP_1\\Aquarium\\obj\\",
+      "outputPath": "C:\\Users\\User-pc\\Documents\\GitHub\\OOP_1\\OOP_1\\Aquarium\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",

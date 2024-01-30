@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquarium", "Aquarium.csproj", "{259D49A2-20B3-4228-8936-D07A5A0BC70A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{259D49A2-20B3-4228-8936-D07A5A0BC70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259D49A2-20B3-4228-8936-D07A5A0BC70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259D49A2-20B3-4228-8936-D07A5A0BC70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259D49A2-20B3-4228-8936-D07A5A0BC70A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7986BF6F-61A3-4845-AF74-19278919223B}
+	EndGlobalSection
+EndGlobal

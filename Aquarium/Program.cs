@@ -1,5 +1,8 @@
-﻿Aquarium aquarium = new Aquarium();
-Fish fish;
+﻿const string CommandAddFish = "1";
+const string CommandRemoveFish = "2";
+const string CommandeExit = "3";
+
+Aquarium aquarium = new Aquarium();
 string command;
 bool isWork = true;
 
@@ -12,15 +15,15 @@ while (isWork)
 
     switch (command)
     {
-        case "1":
+        case CommandAddFish:
             aquarium.AddFish();
             break;
 
-        case "2":
+        case CommandRemoveFish:
             aquarium.RemoveFish();
             break;
 
-        case "3":
+        case CommandeExit:
             isWork = false;
             break;
     }
@@ -33,6 +36,7 @@ while (isWork)
 class Aquarium
 {
     private List<Fish> _fishes = new List<Fish>();
+
     public Aquarium()
     {
         Fish[] fish = { new Fish("Вобла", 10), new Fish("Скат", 7) };
@@ -45,81 +49,81 @@ class Aquarium
         string name;
         int lifetime;
 
-        Console.Write("Введите название рыбы: ");
-        name = Console.ReadLine();
-
-        Console.Write("Введите время жизни рыбы: ");
-        lifetime = Convert.ToInt32(Console.ReadLine());
-
         if (_fishes.Count == 5)
         {
             Console.WriteLine("Аквариум заполнен.");
         }
         else
         {
+            Console.Write("Введите название рыбы: ");
+            name = Console.ReadLine();
+
+            Console.Write("Введите время жизни рыбы: ");
+            lifetime = Convert.ToInt32(Console.ReadLine());
+
+
             _fishes.Add(new Fish(name, lifetime));
         }
     }
 
-    public void RemoveFish()
+
+public void RemoveFish()
+{
+    _fishes.Remove(SearchFish());
+}
+
+private Fish SearchFish()
+{
+    Console.WriteLine("Какую рыбу вы хотите убрать?");
+    string name = Console.ReadLine();
+
+    foreach (Fish fish in _fishes)
     {
-        _fishes.Remove(SearchFish());
-    }
-
-    public Fish SearchFish()
-    {
-        string name;
-
-        Console.WriteLine("Какую рыбу вы хотите убрать?");
-        name = Console.ReadLine();
-
-        foreach (Fish fish in _fishes)
+        if (fish.Name.ToLower() == name.ToLower())
         {
-            if (fish.Name.ToLower() == name.ToLower())
-            {
-                return fish;
-            }
-        }
-        return null;
-    }
-
-    public void LifetimeFishes()
-    {
-        foreach (var fish in _fishes)
-        {
-            if (fish.Lifetime > 0)
-            {
-                fish.Lifetime--;
-            }
+            return fish;
         }
     }
+    return null;
+}
 
-    public void ShowInfo()
+public void LifetimeFishes()
+{
+    foreach (Fish fish in _fishes)
     {
-        int positionX = 60;
-        int positionY = 0;
-
-        foreach (var fish in _fishes)
+        if (fish.Lifetime > 0)
         {
+            fish.Lifetime--;
+        }
+    }
+}
+
+public void ShowInfo()
+{
+    int positionX = 60;
+    int positionY = 0;
+
+    foreach (Fish fish in _fishes)
+    {
+        Console.SetCursorPosition(positionX, positionY);
+        fish.ShowInfo();
+
+        if (fish.Lifetime == 0)
+        {
+            fish.Lifetime = 0;
+
+            positionX += 43;
+
             Console.SetCursorPosition(positionX, positionY);
-            fish.ShowInfo();
+            Console.WriteLine("Рыбу стоит убрать.");
 
-            if (fish.Lifetime == 0)
-            {
-                fish.Lifetime = 0;
-
-                positionX += 43;
-
-                Console.SetCursorPosition(positionX, positionY);
-                Console.WriteLine("Рыбу стоит убрать.");
-
-                positionX = 60;
-            }
-
-            positionY++;
-            Console.SetCursorPosition(0, 0);
+            positionX = 60;
         }
+
+        positionY++;
+        Console.SetCursorPosition(0, 0);
     }
+}
 }
 
 class Fish

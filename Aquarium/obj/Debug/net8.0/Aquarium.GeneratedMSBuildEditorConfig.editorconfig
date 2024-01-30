@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Aquarium
-build_property.ProjectDir = C:\Users\User-pc\source\repos\OOP_1\Aquarium\
+build_property.ProjectDir = C:\Users\User-pc\Documents\GitHub\OOP_1\OOP_1\Aquarium\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
