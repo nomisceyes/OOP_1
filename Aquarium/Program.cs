@@ -50,15 +50,15 @@ class Aquarium
 
         Console.Write("Введите время жизни рыбы: ");
         lifetime = Convert.ToInt32(Console.ReadLine());
-        
-        if(_fishes.Count > 5)
+
+        if (_fishes.Count == 5)
         {
             Console.WriteLine("Аквариум заполнен.");
         }
         else
         {
             _fishes.Add(new Fish(name, lifetime));
-        }     
+        }
     }
 
     public void RemoveFish()
@@ -75,7 +75,7 @@ class Aquarium
 
         foreach (Fish fish in _fishes)
         {
-            if(fish.Name.ToLower() == name.ToLower())
+            if (fish.Name.ToLower() == name.ToLower())
             {
                 return fish;
             }
@@ -87,10 +87,10 @@ class Aquarium
     {
         foreach (var fish in _fishes)
         {
-            if(fish.Lifetime > 0)
+            if (fish.Lifetime > 0)
             {
                 fish.Lifetime--;
-            }      
+            }
         }
     }
 
@@ -108,7 +108,7 @@ class Aquarium
             {
                 fish.Lifetime = 0;
 
-                positionX += 42;
+                positionX += 43;
 
                 Console.SetCursorPosition(positionX, positionY);
                 Console.WriteLine("Рыбу стоит убрать.");
@@ -135,6 +135,6 @@ class Fish
 
     public void ShowInfo()
     {
-        Console.WriteLine($"Имя рыбы: {Name}, оставшееся время жизни: {Lifetime}.");
+        Console.WriteLine($"Имя рыбы: {Name},оставшееся время жизни: {Lifetime}.");
     }
 }
